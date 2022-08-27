@@ -1,0 +1,36 @@
+# -*- coding: utf-8 -*-
+a = float(input())
+
+N100 = int(a/100)
+N50 = int((a-(N100*100))/50)
+N20 = int((a-(N100*100)-(N50*50))/20)
+N10 = int((a-(N100*100)-(N50*50)-(N20*20))/10)
+N5 = int((a-(N100*100)-(N50*50)-(N20*20)-(N10*10))/5)
+N2 = int((a-(N100*100)-(N50*50)-(N20*20)-(N10*10)-(N5*5))/5)
+
+a = a-(N100*100)-(N50*50)-(N20*20)-(N10*10)-(N5*5)-(N2*2)
+print(a)
+M1 = int(a)
+print(M1)
+M050 = int((a-M1)/0.5)
+M025 = int(((a-M1)-(M050*0.5))/0.25)
+M010 = int(((a-M1)-(M050*0.5)-(M025*0.25))/0.10)
+M005 = int(((a-M1)-(M050*0.5)-(M025*0.25)-(M010*0.10))/0.05)
+M001 = int(((a-M1)-(M050*0.5)-(M025*0.25)-(M010*0.10)-(M005*0.005))/0.01)
+
+print("NOTAS:")
+print(N100,"nota(s) de R$ 100.00")
+print(N50,"nota(s) de R$ 50.00")
+print(N20,"nota(s) de R$ 20.00")
+print(N10,"nota(s) de R$ 10.00")
+print(N5,"nota(s) de R$ 5.00")
+print(N2,"nota(s) de R$ 2.00")
+print("MOEDAS:")
+print(M1,"moeda(s) de R$1.00")
+print(M050,"moeda(s) de R$0.50")
+print(M025,"moeda(s) de R$0.25")
+print(M010,"moeda(s) de R$0.10")
+print(M005,"moeda(s) de R$0.05")
+print(M001,"moeda(s) de R$0.01")
+
+
